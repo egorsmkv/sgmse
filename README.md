@@ -9,6 +9,29 @@ This repository contains the official PyTorch implementations for the 2022 paper
 
 Audio examples and further supplementary materials are available [on our project page](https://www.inf.uni-hamburg.de/en/inst/ab/sp/publications/sgmse).
 
+## Create a virtual environment
+
+```bash
+conda create -n sgmse python=3.8
+conda activate sgmse
+```
+
+## Install dependencies for inference
+
+```bash
+pip install -r requirements-inference.txt
+
+# newer GPUs
+pip uninstall torch torchaudio
+pip install torch==1.12.0 torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+```
+
+## Inference
+
+```bash
+python enhance_file.py --ckpt checkpoints/train_vb_29nqe0uh_epoch=115.ckpt --filename noisy_file.wav --enhanced_filename enhanced_file.wav
+```
+
 
 ## Installation
 

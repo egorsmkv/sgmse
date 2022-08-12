@@ -1,0 +1,13 @@
+numpy==1.22.2
+pesq==0.0.4
+pytorch-lightning==1.6.5
+pystoi==0.3.3
+scipy==1.8.0
+sdeint==0.2.4
+setuptools==59.5.0  # fixes https://github.com/pytorch/pytorch/issues/69894
+torch==1.12.0
+torch-ema==0.3
+torchaudio==0.12.0
+torchvision==0.13.0
+torchinfo==1.6.3
+torchsde==0.2.5
